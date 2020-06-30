@@ -1402,14 +1402,39 @@ body {
     width: 11.7rem;
     height: 4rem;
     border-radius: 10rem;
+    padding: 15px;
 }
 
+.file-box {
+  background: #2a8bf254;
+  margin-right: 10px;
+}
 
+.video-box {
+  background: #00c30554;
+}
 
 .file-box svg,
 .video-box svg{
     height: 2rem;
     width: 2rem;
+    margin-right: 10px;
+}
+
+.file-box svg{
+  fill: #2A8BF2;
+}
+
+.file-box p{
+    color: #2A8BF2;
+}
+
+.video-box svg{
+  fill: #00C305;
+}
+
+.video-box p{
+  color: #00C305;
 }
 
 .card {
@@ -1460,3 +1485,35 @@ body {
   fill: #1bf1f1;
 }
 /* End of Section Living room */
+
+/* Beginning of Page nav */
+.page-nav{
+  width: 30vw;
+  height: 4rem;
+  margin: 3rem 0;
+}
+
+.page-nav svg{
+  height: 2rem;
+  width: 2rem;
+}
+
+.page-nav a{
+  font-size: 2rem;
+  margin: 1rem;
+  color: #000;
+}
+
+.page-nav .active{
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  margin: 0 1rem;
+  padding: 5px;
+  vertical-align: middle;
+  background-color: #22232B;
+  color: lightgray;
+}
+
+/* End of Page Nav */
+
