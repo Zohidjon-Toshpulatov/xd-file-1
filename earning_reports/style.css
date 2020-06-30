@@ -1394,7 +1394,7 @@ body {
 
 .section__room-files{
     width: 85%;
-
+    
 }
 
 .file-box, 
@@ -1403,6 +1403,8 @@ body {
     height: 4rem;
     border-radius: 10rem;
 }
+
+
 
 .file-box svg,
 .video-box svg{
