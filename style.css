@@ -1288,19 +1288,19 @@ body {
 
 
 /* Beginning of Home Navbar  */
-.navbar {
+.home-nav {
   padding: 10rem 6.4rem 10rem 27.6rem;
 }
 
-.navbar-nav {
+.home-nav .navbar-nav {
   width: 45.4rem;
 }
 
-.nav-item {
+.home-nav .nav-item {
   margin-right: 7.2rem;
 }
 
-.nav-link {
+.home-nav .nav-link {
   font-size: 1.3rem;
   letter-spacing: 2px;
   color: #1d2433;
@@ -1308,12 +1308,11 @@ body {
   margin: 0 auto;
   opacity: 0.6;
 }
-
-.navbar-nav .active {
+.home.navbar-nav .active {
   opacity: 1;
 }
 
-.navbar-btn {
+.home-nav .navbar-btn {
   display: block;
   width: 21rem;
   height: 6.4rem;
@@ -1364,6 +1363,27 @@ body {
   font-size: 1.3rem;
 }
 /* End of Section Comment */
+
+/* Beginning of Section  */
+
+.scroll-card{
+  width: 40%;
+  margin-left: 10%;
+}
+
+.scroll-card .card-img img{
+  display: block;
+  margin: 1rem ;
+}
+
+.scroll-card .card-body p{
+  text-align: left;
+  letter-spacing: 0.59px;
+  color: #5F6C7D;
+  opacity: 1;
+  font-size: 13px;
+}
+/* End of Section */
 
 /* Beginning of Section Living room */
 
