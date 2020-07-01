@@ -1402,14 +1402,14 @@ button.btn.email {
 *,
 *::before,
 *::after {
-  margin    : 0;
-  padding   : 0;
+  margin: 0;
+  padding: 0;
   box-sizing: inherit;
 }
 
 html {
   box-sizing: border-box;
-  font-size : 62.5%;
+  font-size: 62.5%;
 }
 
 body {
@@ -1532,6 +1532,7 @@ body {
   color: #1d2433;
   text-transform: uppercase;
   position: absolute;
+  box-shadow: 8px 9px 12px -4px #80808069;
 }
 
 .dribble-box a {
@@ -1614,8 +1615,8 @@ body {
 
 /* Beginning of Section Comment */
 .section__comment-row {
-  max-width    : 130rem;
-  margin       : 0 auto;
+  max-width: 130rem;
+  margin: 0 auto;
   margin-bottom: 9.5rem;
   min-width: 992px;
   overflow-y: auto;
@@ -1653,7 +1654,7 @@ body {
 /* Beginning of Section  */
 
 .scroll-card {
-  width: 40%;
+  max-width: 600px;
   margin-left: 10%;
 }
 
@@ -1715,6 +1716,7 @@ body {
   background-color: #fff;
   z-index: 1;
   margin: 19rem auto;
+  box-shadow: 2px 29px 10px 1px #80808017;
 }
 
 .video__timeline-nav {
@@ -1865,12 +1867,12 @@ body {
   text-align: center;
 }
 
-.page-nav svg{
+.page-nav svg {
   height: 2rem;
   width: 2rem;
 }
 
-.page-nav a{
+.page-nav a {
   font-size: 2rem;
   margin: 1rem;
   color: #000;
@@ -1891,19 +1893,20 @@ body {
 
 /* Home Dashboard Modal  */
 .dashboard-modal .modal-content {
-  top       : 0.2373046875px;
-  left      : 0px;
-  width     : 1150px;
-  height    : 783px;
-  background: transparent linear-gradient(90deg, #F5F9FF 0%, #E7F1FE 100%) 0% 0% no-repeat padding-box;
-  opacity   : 1;
+  top: 0.2373046875px;
+  left: 0px;
+  width: 1150px;
+  height: 783px;
+  background: transparent linear-gradient(90deg, #f5f9ff 0%, #e7f1fe 100%) 0% 0%
+    no-repeat padding-box;
+  opacity: 1;
   padding: 40px;
 }
 
 .dashboard-modal-navbar {
-    padding: 0px;
-    padding-right: 47px;
-    height: 96px;
+  padding: 0px;
+  padding-right: 47px;
+  height: 96px;
 }
 
 #modal-monthpicker:focus {
@@ -1911,46 +1914,46 @@ body {
   outline: 0px;
 }
 #modal-monthpicker {
-  top          : 30px;
-  left         : 39px;
-  width        : 180px;
-  height       : 40px;
-  background   : #FFFFFF 0% 0% no-repeat padding-box;
+  top: 30px;
+  left: 39px;
+  width: 180px;
+  height: 40px;
+  background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 8px;
-  opacity      : 1;
-  border       : 0px;
+  opacity: 1;
+  border: 0px;
 }
 #modal-monthpicker img {
   padding: 8px 1px 1px 10px;
 }
 #modal-monthpicker span {
   text-align: left;
-    letter-spacing: 0px;
-    color: #000000;
-    opacity: 1;
-    margin-left: 10px;
-    position: relative;
-    top: 6px;
-    font-size: 14px;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  margin-left: 10px;
+  position: relative;
+  top: 6px;
+  font-size: 14px;
 }
 
 #modal-monthpicker::after {
-  vertical-align: .055em;
+  vertical-align: 0.055em;
   margin-left: 6.255em;
-  color:#B0BEC5;
+  color: #b0bec5;
 }
 .dashboard-modal-navbar .dropdown-menu {
   left: 59px;
 }
 
 .filter-icon-wrapper {
-  top          : 30px;
-  margin-left  : 20px;
-  width        : 40px;
-  height       : 40px;
-  background   : #FFFFFF 0% 0% no-repeat padding-box;
+  top: 30px;
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 12px;
-  opacity      : 1;
+  opacity: 1;
 }
 
 .filter-icon-wrapper img {
@@ -1958,17 +1961,17 @@ body {
 }
 
 .navbar-right-icon-wrapper img {
-  top         : 40px;
-  opacity     : 1;
+  top: 40px;
+  opacity: 1;
   padding-left: 52px;
 }
 
 .review-card {
-    width: 250px;
-    height: 194px;
-    border-radius: 14px;
-    background-color: #ffffff;
-    padding: 30px 32px;
+  width: 250px;
+  height: 194px;
+  border-radius: 14px;
+  background-color: #ffffff;
+  padding: 30px 32px;
 }
 .calories-row {
   margin-top: 20px;
@@ -1982,7 +1985,7 @@ body {
   padding: 32px;
 }
 
-.rewiew-progress-row  {
+.rewiew-progress-row {
   margin-top: 20px;
 }
 .review-text {
@@ -1998,7 +2001,7 @@ body {
   color: #616161;
   text-transform: uppercase;
 }
-.blue-bar{
+.blue-bar {
   width: 375.2px;
   height: 23.4px;
   border-radius: 10.1px;
@@ -2022,7 +2025,7 @@ body {
 .user-review-card {
   width: 434px;
   height: 64px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 6px;
   opacity: 1;
   margin-top: 10px;
@@ -2041,7 +2044,7 @@ body {
 }
 #photo-widget p {
   padding-left: 10px;
-  color: #FF3366;
+  color: #ff3366;
 }
 .review-card-header {
   display: flex;
@@ -2068,19 +2071,19 @@ body {
   padding-left: 15px;
 }
 .review-card-header .email {
-   opacity: 0.6;
-    font-size: 12px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.36;
-    letter-spacing: normal;
-    text-align: left;
-    padding-left: 15px;
-    color: #50e3c2;
-    margin-top: 10px;
+  opacity: 0.6;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  padding-left: 15px;
+  color: #50e3c2;
+  margin-top: 10px;
 }
-.review-card-content  {
+.review-card-content {
   margin-top: 10px;
 }
 .review-card-content p {
@@ -2094,7 +2097,7 @@ body {
   color: #6d7278;
 }
 .review-card-content p span {
-  color: #0091FF;
+  color: #0091ff;
 }
 .review-card-title {
   font-size: 12px;
@@ -2126,7 +2129,7 @@ body {
   top: -7px;
   width: 32px;
   height: 32px;
-  background: #B620E0 0% 0% no-repeat padding-box;
+  background: #b620e0 0% 0% no-repeat padding-box;
   border-radius: 6px;
   opacity: 1;
 }
@@ -2135,13 +2138,13 @@ body {
 }
 
 .calories-card-card-content {
-  display: flex
+  display: flex;
 }
 .calroies-icon {
-   width: 60px;
-    height: 60px;
-    border-radius: 6px;
-    background-color: #0054fe29;
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  background-color: #0054fe29;
 }
 .calroies-icon img {
   padding: 21px 22px;
@@ -2161,14 +2164,14 @@ body {
   color: #282d30;
 }
 .calories-text {
-    font-size: 12px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.75;
-    letter-spacing: normal;
-    text-align: left;
-    color: #74798c;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: left;
+  color: #74798c;
 }
 
 .user-review-card .row div {
