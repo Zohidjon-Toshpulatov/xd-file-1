@@ -1641,6 +1641,11 @@ body {
   max-width: 1300px;
   margin: 0 auto;
   margin-bottom: 9.5rem;
+  white-space: nowrap;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch; 
 }
 
 .section__comment-col-custom {
@@ -1648,6 +1653,7 @@ body {
   opacity: 1;
   position: relative;
   height: 250px;
+  display: inline-block;
 }
 
 .section__comment-item {
@@ -1659,6 +1665,8 @@ body {
   top: 10px;
   /* opacity: 0.4; */
   padding: 25px;
+  white-space: pre-line;
+
 }
 
 .section__comment-text {
@@ -2265,12 +2273,24 @@ body {
     height: 32px;
     font-size: 12px;
   }
-  .home .navbar-nav{
+  .navbar-nav{
     display: contents!important;
   }
   .home-nav .nav-item {
     margin-right: 2px;
   }
+  .section__comment-row {
+    white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;  
+  }
+  .section__comment-col-custom {
+    width: 350px;
+    float: none;
+    display: inline-block;
+    }
 }
 /* 
 .vertical-progress-container {
