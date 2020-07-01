@@ -1418,12 +1418,12 @@ body {
 }
 
 .icon__box {
-  width: 4rem;
-  height: 4rem;
+  width: 40px;
+  height: 40px;
   display: block;
   margin-right: 5px;
 }
-
+/* Beginning of Background-decoration*/
 .background-decoration {
   z-index: -1;
 }
@@ -1532,11 +1532,12 @@ body {
   color: #1d2433;
   text-transform: uppercase;
   position: absolute;
-  box-shadow: 8px 9px 12px -4px #80808069;
+  /* box-shadow: 8px 9px 12px -4px #80808069; */
 }
 
 .dribble-box a {
   color: #1d2433;
+
 }
 
 .dribble-box a span {
@@ -1572,6 +1573,28 @@ body {
   right: 85px;
 }
 
+.box-1,
+.box-2,
+.box-3,
+.box-4{
+  position: absolute;
+}
+
+.dribble-blur-box{
+  width: 273px;
+    height: 22px;
+    background: #B1AFBA;
+    mix-blend-mode: multiply;
+    border-radius: 25px;
+    filter: blur(26px);
+    position: absolute;
+    bottom: -11px;
+    z-index: -1;
+}
+.box-1, .box-2, .box-3, .box-4 {
+    position: absolute;
+}
+/* End of Background-decoration*/
 /* Beginning of Home Navbar  */
 .home-nav {
   padding: 10rem 0rem 10rem 0rem;
@@ -1582,11 +1605,11 @@ body {
 
 
 .home-nav .nav-item {
-  margin-right: 7.2rem;
+  margin-right: 72px;
 }
 
 .home-nav .nav-link {
-  font-size: 1.3rem;
+  font-size: 13px;
   letter-spacing: 2px;
   color: #1d2433;
   font-family: sans-serif;
@@ -1599,8 +1622,8 @@ body {
 
 .home-nav .navbar-btn {
   display: block;
-  width: 21rem;
-  height: 6.4rem;
+  width: 210px;
+  height: 64px;
   background: #7364d9 0% 0% no-repeat padding-box;
   border-radius: 36px;
   text-align: center;
@@ -1608,14 +1631,14 @@ body {
   color: #ffffff;
   opacity: 0.8;
   border: none;
-  font-size: 1.6rem;
+  font-size: 16px;
 }
 
 /* End of Home Navbar  */
 
 /* Beginning of Section Comment */
 .section__comment-row {
-  max-width: 130rem;
+  max-width: 1300px;
   margin: 0 auto;
   margin-bottom: 9.5rem;
 }
@@ -1624,7 +1647,7 @@ body {
   border-radius: 8px;
   opacity: 1;
   position: relative;
-  height: 25rem;
+  height: 250px;
 }
 
 .section__comment-item {
@@ -1633,9 +1656,9 @@ body {
   margin: 0 auto;
   border-radius: 8px;
   position: absolute;
-  top: 1rem;
+  top: 10px;
   opacity: 0.4;
-  padding: 2.5rem;
+  padding: 25px;
 }
 
 .section__comment-text {
@@ -1644,8 +1667,8 @@ body {
   color: #5f6c7d;
   opacity: 1;
   display: block;
-  margin: 2.5rem 0;
-  font-size: 1.3rem;
+  margin: 25px 0;
+  font-size: 13px;
 }
 /* End of Section Comment */
 
@@ -1661,7 +1684,7 @@ body {
 }
 .scroll-card .card-img img {
   display: block;
-  margin: 1rem;
+  margin: 10px;
 }
 
 .scroll-card .card-body p {
@@ -1713,12 +1736,12 @@ body {
   height: 600px;
   background-color: #fff;
   z-index: 1;
-  margin: 19rem auto;
-  box-shadow: 2px 29px 10px 1px #80808017;
+  margin: 190px auto;
+  position: relative;
 }
 
 .video__timeline-nav {
-  padding: 1rem;
+  padding: 10px;
   font-size: 15px;
   text-align: center;
 }
@@ -1734,6 +1757,16 @@ body {
   opacity: 0.3;
   width: 20px;
 }
+
+.timeline-blur{
+  width: 95%;
+  height: 52px;
+  background: #B1AFBA;
+  mix-blend-mode: multiply;
+  border-radius: 25px;
+  opacity: 1;
+  z-index: 3;
+}
 /* End of Section Video*/
 /* Beginning of Section Living room */
 
@@ -1742,7 +1775,7 @@ body {
 }
 
 .section__room .form-group input {
-  width: 75rem;
+  width: 750px;
   margin-right: 1vw;
   border: none;
   background-color: transparent;
@@ -1753,13 +1786,13 @@ body {
 }
 
 .section__room .form-group select {
-  width: 25rem;
+  width: 250px;
   border: none;
   background-color: transparent;
   padding-bottom: 0;
-  font-size: 1.3rem;
+  font-size: 13px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  height: 2.9rem;
+  height: 29px;
 }
 
 .section__room-files {
@@ -1768,9 +1801,9 @@ body {
 
 .file-box,
 .video-box {
-  width: 11.7rem;
-  height: 4rem;
-  border-radius: 10rem;
+  width: 117px;
+  height: 40px;
+  border-radius: 100px;
   padding: 15px;
 }
 
@@ -1785,8 +1818,8 @@ body {
 
 .file-box svg,
 .video-box svg {
-  height: 2rem;
-  width: 2rem;
+  height: 20px;
+  width: 20px;
   margin-right: 10px;
 }
 
@@ -1808,7 +1841,7 @@ body {
 
 .section__room .card {
   width: 94%;
-  margin: 1rem auto;
+  margin: 10px auto;
   border: none;
   padding: 10px;
 }
@@ -1819,11 +1852,11 @@ body {
 }
 
 .section__room .card-body h5 {
-  font-size: 1.3rem;
+  font-size: 13px;
 }
 
 .section__room .card-body p {
-  font-size: 0.9rem;
+  font-size: 9px;
 }
 
 .section__room .card-footer {
@@ -1836,7 +1869,7 @@ body {
   letter-spacing: 0px;
   color: #22232b;
   opacity: 1;
-  margin-bottom: 0.5rem;
+  margin-bottom: 5px;
 }
 
 .section__room .card-footer h5 {
@@ -1847,11 +1880,11 @@ body {
   opacity: 0.5;
 }
 .section__room .card-footer-starbox {
-  margin: 4rem 0;
+  margin: 4px 0;
 }
 .section__room .card-footer-star {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 15px;
+  height: 15px;
   fill: #1bf1f1;
 }
 /* End of Section Living room */
@@ -1860,28 +1893,28 @@ body {
 /* Beginning of Page nav */
 .page-nav {
   max-width: 500px;
-  height: 4rem;
-  margin: 3rem 0;
+  height: 40px;
+  margin: 30px 0;
   padding: 0 50px;
   text-align: center;
 }
 
 .page-nav svg {
-  height: 2rem;
-  width: 2rem;
+  height: 20px;
+  width: 20px;
 }
 
 .page-nav a {
-  font-size: 2rem;
-  margin: 1rem;
+  font-size: 20px;
+  margin: 10px;
   color: #000;
 }
 
 .page-nav .active {
-  width: 4rem;
-  height: 4rem;
+  width: 40px;
+  height: 40px;
   text-align: center;
-  margin: 0 1rem;
+  margin: 0 1px;
   padding: 5px;
   vertical-align: middle;
   background-color: #22232b;
