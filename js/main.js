@@ -13,4 +13,11 @@ $(document).ready(function(){
         $(".custom-tab-content").removeClass("active-tab");
         $(tabId).addClass("active-tab");
     }
+
+    const allItems = $(".progress-item");
+    allItems.each(function(index){
+        this.addEventListener('click', function(e){
+            this.classList.add('active')
+        })
+    });
 })

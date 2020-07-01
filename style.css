@@ -2181,4 +2181,39 @@ body {
 .active-tab {
   display: block;
 }
+/* 
+.vertical-progress-container {
+  padding-left: 100px;
+  transform: translateY(0%);
+}
+.vertical-progress-container::after{
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: calc(100% - 58px);
+  left: 10px;
+  top: 0;
+  background-color: red;
+}
+.progress-item {
+  counter-increment: list;
+}
+.progress-item::before{
+  content: "";
+  position: absolute;
+  background: green;
+  width: 18px;
+  height: 18px;
+  left: 3px;
+  margin-top:5%;  
+  transform: translateY(-50%);
+  border-radius: 50px;
+  z-index: 100;
+  border: 2px solid;
+  transition: background 250ms;
+}
+
+.progress-item.active::before{
+  background-color: sandybrown;
+} */
 /* Modal */
