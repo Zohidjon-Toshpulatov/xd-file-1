@@ -1618,7 +1618,6 @@ body {
   max-width: 130rem;
   margin: 0 auto;
   margin-bottom: 9.5rem;
-  overflow-y: auto;
 }
 
 .section__comment-col-custom {
