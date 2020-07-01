@@ -2174,4 +2174,11 @@ body {
 .user-review-card .row div {
   padding-top: 25px;
 }
+
+.custom-tab-content {
+  display: none;
+}
+.active-tab {
+  display: block;
+}
 /* Modal */
