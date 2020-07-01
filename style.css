@@ -1618,7 +1618,6 @@ body {
   max-width: 130rem;
   margin: 0 auto;
   margin-bottom: 9.5rem;
-  min-width: 992px;
   overflow-y: auto;
 }
 
@@ -1812,6 +1811,7 @@ body {
   width: 94%;
   margin: 1rem auto;
   border: none;
+  padding: 10px;
 }
 
 .section__room .card-body .col-6 {
