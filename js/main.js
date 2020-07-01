@@ -16,8 +16,13 @@ $(document).ready(function(){
 
     const allItems = $(".progress-item");
     allItems.each(function(index){
-        this.addEventListener('click', function(e){
+        this.addEventListener('click',  function(e){
+            console.log('click')
+            for(var i = 0; i < allItems.length; i++){
+                allItems[i].classList.remove("active");
+            }
             this.classList.add('active')
         })
+
     });
 })

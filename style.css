@@ -1603,9 +1603,6 @@ body {
   margin-right: 64px;
 }
 
-.home-nav .navbar-nav {
-  width: 454px;
-}
 
 .home-nav .nav-item {
   margin-right: 72px;
@@ -1644,6 +1641,11 @@ body {
   max-width: 1500px;
   margin: 0 auto;
   margin-bottom: 9.5rem;
+  white-space: nowrap;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch; 
 }
 
 .section__comment-row:not(:last-child){
@@ -1655,6 +1657,7 @@ body {
   opacity: 1;
   position: relative;
   height: 250px;
+  display: inline-block;
 }
 
 .section__comment-item {
@@ -1664,8 +1667,10 @@ body {
   border-radius: 8px;
   position: absolute;
   top: 10px;
-  opacity: 0.4;
+  /* opacity: 0.4; */
   padding: 25px;
+  white-space: pre-line;
+
 }
 
 .section__comment-text {
@@ -2223,7 +2228,75 @@ body {
 .active-tab {
   display: block;
 }
-/* 
+@media screen and (max-width: 700px) {
+  .home-nav{
+    padding: 20px 10px;
+    margin-right: 0px;
+  }
+  .dribble-box {
+    display: none!important;
+  }
+  .background-decoration {
+    display: none!important;
+  }
+  .page-nav{
+   justify-content: flex-end;
+  } 
+  .page-nav a {
+    font-size: 12px;
+    margin: 7px;
+  }
+  .page-nav .active {
+    width: 30px;
+    height: auto;
+  }
+  .container-fluid {
+    padding: 0px;
+  }
+
+  .section__room .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .scroll-card {
+    margin-left: 0px;
+    padding: 0 10px;
+
+  }
+  .video__timeline{
+    margin: 50px auto;
+    height: 300px;
+  }
+  .video-play-btn {
+    width: 64px;
+    height: 57px;
+  }
+  .home-nav .navbar-btn {
+    width: 100px;
+    height: 32px;
+    font-size: 12px;
+  }
+  .navbar-nav{
+    display: contents!important;
+  }
+  .home-nav .nav-item {
+    margin-right: 2px;
+  }
+  .section__comment-row {
+    white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;  
+  }
+  .section__comment-col-custom {
+    width: 350px;
+    float: none;
+    display: inline-block;
+    }
+}
+
 .vertical-progress-container {
   padding-left: 100px;
   transform: translateY(0%);
@@ -2231,11 +2304,12 @@ body {
 .vertical-progress-container::after{
   content: '';
   position: absolute;
-  width: 3px;
+  width: 1px;
   height: calc(100% - 58px);
   left: 10px;
   top: 0;
-  background-color: red;
+  background-color: #1890FF;
+  margin-top: 30px;
 }
 .progress-item {
   counter-increment: list;
@@ -2243,19 +2317,48 @@ body {
 .progress-item::before{
   content: "";
   position: absolute;
-  background: green;
-  width: 18px;
-  height: 18px;
-  left: 3px;
+  background-image: linear-gradient( #f5f5ff 0%, #e7f1fe 100%);
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  left: -5px;
   margin-top:5%;  
   transform: translateY(-50%);
-  border-radius: 50px;
+  border-radius: 50px; 
   z-index: 100;
-  border: 2px solid;
+  border: 1px solid #1890FF;
   transition: background 250ms;
 }
 
+.progress-item.active{
+  position: relative;
+}
+
+
 .progress-item.active::before{
-  background-color: sandybrown;
-} */
+  position: absolute;
+  left: -93px;
+  top: -5px;
+  content: "";
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #1890ff;
+  /* background-image: linear-gradient(90deg, #1890FF 0%, #1890FF 100%); */
+  background-color: #1890ff !important;
+  color: #FFF;
+  clip-path: polygon(57% 82%, 86% 46%, 60% 91%, 29% 69%);
+
+}
+
+.progress-item.active::after{
+  content: "";
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #1890ff;
+  position: absolute;
+  left: -90px;
+  top: 11px;
+}
 /* Modal */
