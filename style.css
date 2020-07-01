@@ -1940,7 +1940,7 @@ body {
   top: 0.2373046875px;
   left: 0px;
   width: 1150px;
-  height: 783px;
+  height: 810px;
   background: transparent linear-gradient(90deg, #f5f9ff 0%, #e7f1fe 100%) 0% 0%
     no-repeat padding-box;
   opacity: 1;
@@ -2228,6 +2228,78 @@ body {
 .active-tab {
   display: block;
 }
+.vertical-progress-container {
+  padding-left: 25px;
+  transform: translateY(0%);
+}
+.vertical-line::after, .vertical-line2::after, .vertical-line3::after{
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: calc(27% - 59px);
+  left: -34px;
+  top: 23px;
+  background-color: #1890FF;
+  margin-top: 30px;
+}
+.vertical-line2::after{
+  height: calc(27% - 59px);
+  top: 37%
+}
+
+.vertical-line3::after{
+  height: calc(27% - 59px);
+  top: 71%
+}
+.progress-item {
+  counter-increment: list;
+}
+.progress-item::before{
+  content: "";
+  position: absolute;
+  background-image: linear-gradient( #f5f5ff 0%, #e7f1fe 100%);
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  left: -50px;
+  margin-top:5%;  
+  transform: translateY(-50%);
+  border-radius: 50px; 
+  z-index: 100;
+  border: 1px solid #1890FF;
+  transition: background 250ms;
+}
+
+.progress-item.active{
+  position: relative;
+}
+
+
+.progress-item.active::before{
+  position: absolute;
+    left: -63px;
+    top: -8px;
+    content: "";
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #1890ff;
+    background-image: linear-gradient(90deg, #1890FF 0%, #1890FF 100%);
+    background-color: #1890ff !important;
+    color: #FFF;
+    clip-path: polygon(57% 82%, 86% 46%, 60% 91%, 29% 69%);
+}
+
+.progress-item.active::after{
+  content: "";
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #1890ff;
+  position: absolute;
+  left: -60px;
+  top: 11px;
+}
 @media screen and (max-width: 700px) {
   .home-nav{
     padding: 20px 10px;
@@ -2240,7 +2312,7 @@ body {
     display: none!important;
   }
   .page-nav{
-   justify-content: flex-end;
+    justify-content: center;
   } 
   .page-nav a {
     font-size: 12px;
@@ -2260,7 +2332,7 @@ body {
   }
 
   .scroll-card {
-    margin-left: 0px;
+    margin-left: 70px;
     padding: 0 10px;
 
   }
@@ -2270,7 +2342,7 @@ body {
   }
   .video-play-btn {
     width: 64px;
-    height: 57px;
+    height: 64px;
   }
   .home-nav .navbar-btn {
     width: 100px;
@@ -2295,70 +2367,30 @@ body {
     float: none;
     display: inline-block;
     }
-}
-
-.vertical-progress-container {
-  padding-left: 100px;
-  transform: translateY(0%);
-}
-.vertical-progress-container::after{
-  content: '';
-  position: absolute;
-  width: 1px;
-  height: calc(100% - 58px);
-  left: 10px;
-  top: 0;
-  background-color: #1890FF;
-  margin-top: 30px;
-}
-.progress-item {
-  counter-increment: list;
-}
-.progress-item::before{
-  content: "";
-  position: absolute;
-  background-image: linear-gradient( #f5f5ff 0%, #e7f1fe 100%);
-  background-color: transparent;
-  width: 32px;
-  height: 32px;
-  left: -5px;
-  margin-top:5%;  
-  transform: translateY(-50%);
-  border-radius: 50px; 
-  z-index: 100;
-  border: 1px solid #1890FF;
-  transition: background 250ms;
-}
-
-.progress-item.active{
-  position: relative;
+    .dashboard-modal .modal-content {
+      height: 100%;
+      padding: 10px;
+    }
+    .rewiew-progress-row {
+      padding-left: 50px;
+    }
+    .user-review-row {
+     padding-left: 5px;
+    }
+    .vertical-progress-container::after{
+      left: -35px;
+    }
+    .progress-item::before{
+     left: -50px;
+    }
+    .progress-item.active::before{
+      left: -49px;
+      top: -2px;
+    }
+    .progress-item.active::after{
+      left: -46px;
+    }
 }
 
 
-.progress-item.active::before{
-  position: absolute;
-  left: -93px;
-  top: -5px;
-  content: "";
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: 1px solid #1890ff;
-  /* background-image: linear-gradient(90deg, #1890FF 0%, #1890FF 100%); */
-  background-color: #1890ff !important;
-  color: #FFF;
-  clip-path: polygon(57% 82%, 86% 46%, 60% 91%, 29% 69%);
-
-}
-
-.progress-item.active::after{
-  content: "";
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: 1px solid #1890ff;
-  position: absolute;
-  left: -90px;
-  top: 11px;
-}
 /* Modal */
