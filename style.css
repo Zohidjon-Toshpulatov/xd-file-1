@@ -1574,7 +1574,10 @@ body {
 
 /* Beginning of Home Navbar  */
 .home-nav {
-  padding: 10rem 6.4rem 10rem 27.6rem;
+  padding: 10rem 0rem 10rem 0rem;
+  max-width: 1400px;
+  margin: auto;
+  margin-right: 64px;
 }
 
 .home-nav .navbar-nav {
