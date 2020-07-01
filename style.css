@@ -1641,9 +1641,13 @@ body {
 
 /* Beginning of Section Comment */
 .section__comment-row {
-  max-width: 1300px;
+  max-width: 1500px;
   margin: 0 auto;
   margin-bottom: 9.5rem;
+}
+
+.section__comment-row:not(:last-child){
+  margin-right: 72px;
 }
 
 .section__comment-col-custom {
