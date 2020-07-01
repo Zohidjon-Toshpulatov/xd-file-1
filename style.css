@@ -1569,7 +1569,7 @@ body {
 
 .dribble-box-3 {
   top: 1860px;
-  right: 85px;
+  right: 155px;
 }
 
 .box-1,
@@ -1751,7 +1751,7 @@ body {
 }
 
 .video__timeline {
-  max-width: 700px;
+  max-width: 928px;
   height: 600px;
   background-color: #fff;
   margin: 190px auto;
