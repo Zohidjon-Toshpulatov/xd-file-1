@@ -1674,7 +1674,7 @@ body {
     border-radius: 8px;
     position: absolute;
     top: 10px;
-    opacity: 0.4;
+    background-color: #ffffff75;
     padding: 25px;
     white-space: pre-line;
     border-radius: 8px;
