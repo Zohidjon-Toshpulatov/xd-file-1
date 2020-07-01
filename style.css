@@ -1580,9 +1580,6 @@ body {
   margin-right: 64px;
 }
 
-.home-nav .navbar-nav {
-  width: 45.4rem;
-}
 
 .home-nav .nav-item {
   margin-right: 7.2rem;
@@ -2185,6 +2182,12 @@ body {
 }
 .active-tab {
   display: block;
+}
+@media screen and (max-width: 700px) {
+  .home-nav{
+    padding: 10px;
+    margin-right: 0px;
+  }
 }
 /* 
 .vertical-progress-container {
