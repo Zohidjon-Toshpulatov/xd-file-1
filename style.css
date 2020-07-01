@@ -2304,7 +2304,7 @@ body {
 .progress-item.active::before {
   position: absolute;
   left: -63px;
-  top: 6px;
+  top: -10px;
   content: "";
   width: 32px;
   height: 32px;
