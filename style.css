@@ -1597,7 +1597,10 @@ body {
 /* End of Background-decoration*/
 /* Beginning of Home Navbar  */
 .home-nav {
-  padding: 100px 64px 100px 276px;
+  padding: 10rem 0rem 10rem 0rem;
+  max-width: 1400px;
+  margin: auto;
+  margin-right: 64px;
 }
 
 .home-nav .navbar-nav {
@@ -1640,9 +1643,7 @@ body {
 .section__comment-row {
   max-width: 1300px;
   margin: 0 auto;
-  margin-bottom: 95px;
-  min-width: 992px;
-  overflow-y: auto;
+  margin-bottom: 9.5rem;
 }
 
 .section__comment-col-custom {
@@ -1845,6 +1846,7 @@ body {
   width: 94%;
   margin: 10px auto;
   border: none;
+  padding: 10px;
 }
 
 .section__room .card-body .col-6 {
@@ -2217,4 +2219,39 @@ body {
 .active-tab {
   display: block;
 }
+/* 
+.vertical-progress-container {
+  padding-left: 100px;
+  transform: translateY(0%);
+}
+.vertical-progress-container::after{
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: calc(100% - 58px);
+  left: 10px;
+  top: 0;
+  background-color: red;
+}
+.progress-item {
+  counter-increment: list;
+}
+.progress-item::before{
+  content: "";
+  position: absolute;
+  background: green;
+  width: 18px;
+  height: 18px;
+  left: 3px;
+  margin-top:5%;  
+  transform: translateY(-50%);
+  border-radius: 50px;
+  z-index: 100;
+  border: 2px solid;
+  transition: background 250ms;
+}
+
+.progress-item.active::before{
+  background-color: sandybrown;
+} */
 /* Modal */
