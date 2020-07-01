@@ -2304,7 +2304,7 @@ body {
 .progress-item.active::before {
   position: absolute;
   left: -63px;
-  top: -8px;
+  top: 6px;
   content: "";
   width: 32px;
   height: 32px;
@@ -2410,7 +2410,7 @@ body {
     }
     .progress-item.active::before{
       left: -49px;
-      top: -2px;
+      top: 6px;
     }
     .progress-item.active::after{
       left: -46px;
@@ -2441,6 +2441,10 @@ body {
     }
     .dashboard-modal-navbar{
       padding-right: 22px;
+    }
+    .filter-icon-wrapper {
+      margin: auto;
+      margin-left: 5px;
     }
 }
 
