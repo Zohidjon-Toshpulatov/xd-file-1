@@ -2390,6 +2390,33 @@ body {
     .progress-item.active::after{
       left: -46px;
     }
+    .review-card{
+      width: 310px;
+      margin: auto;
+    }
+    .calories-card {
+      width: 310px;
+      margin: auto;
+    }
+    .blue-bar {
+      width: 230.2px;
+      margin: auto;
+    }
+    .user-review-card{
+      width: 310px;
+      margin: auto;
+      margin-bottom: 15px;
+    }
+    .media-widget {
+      margin-left: 20px;
+      padding-bottom: 10px;
+    }
+    .navbar-right-icon-wrapper img {
+      padding-left: 20px;
+    }
+    .dashboard-modal-navbar{
+      padding-right: 22px;
+    }
 }
 
 
