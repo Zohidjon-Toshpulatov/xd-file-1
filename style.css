@@ -2292,7 +2292,7 @@ body {
     display: inline-block;
     }
 }
-/* 
+
 .vertical-progress-container {
   padding-left: 100px;
   transform: translateY(0%);
@@ -2326,5 +2326,5 @@ body {
 
 .progress-item.active::before{
   background-color: sandybrown;
-} */
+}
 /* Modal */
