@@ -2106,6 +2106,7 @@ body {
 .media-widget {
   padding-top: 25px;
 }
+
 #photo-widget {
   width: 94px;
   height: 40px;
@@ -2358,6 +2359,21 @@ body {
   display: none;
 }
 
+
+.card-bottom-photo-btn {
+  width: 80%;
+  height: 40px;
+  background: #ff336647 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  margin:auto;
+  margin-top: 20px;
+  justify-content: center;
+}
+.card-bottom-photo-btn p {
+  padding-left: 10px;
+  color: #ff3366;
+}
+
 @media screen and (max-width: 1200px) and (min-width: 992px) {
   .dashboard-modal .modal-content {
     height: 100%;
@@ -2459,7 +2475,7 @@ body {
     -webkit-overflow-scrolling: touch;
   }
   .section__comment-col-custom {
-    width: 350px;
+    width: 270px;
     float: none;
     display: inline-block;
   }
