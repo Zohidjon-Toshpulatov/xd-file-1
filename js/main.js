@@ -25,4 +25,9 @@ $(document).ready(function(){
         })
 
     });
+
+
+    $(".navbar-toggler").on("click", function (){
+        $(".mobileHome-nav").toggleClass("open");
+    });
 })
