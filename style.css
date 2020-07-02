@@ -1962,8 +1962,7 @@ body {
 .dashboard-modal .modal-content {
   top: 0.2373046875px;
   left: 0px;
-  width: 1150px;
-  height: 810px;
+  max-width: 1150px;
   background: transparent linear-gradient(90deg, #f5f9ff 0%, #e7f1fe 100%) 0% 0%
     no-repeat padding-box;
   opacity: 1;
@@ -2255,7 +2254,7 @@ body {
   display: none;
 }
 .active-tab {
-  display: block;
+  display: block!important;
 }
 .vertical-progress-container {
   padding-left: 25px;
@@ -2368,29 +2367,21 @@ body {
   }
 }
 
+
+#second-tab {
+  display: none;
+}
+
+#third-tab {
+  display: none;
+}
+
 @media screen and (max-width: 992px) and (min-width: 576px) {
   .modal-lg,
   .modal-xl {
     max-width: 992px;
     margin: 0;
   }
-
-  .media-widget {
-    position: absolute;
-    top: -740px;
-    left: -457px;
-  }
-
-  .widget-photo{
-    position: absolute;
-    position: absolute;
-    top: -803px;
-    left: -333px;
-  }
-}
-
-@media screen and (max-width: 576){
-  
 }
 
 @media screen and (max-width: 700px) {
@@ -2465,8 +2456,15 @@ body {
     /* margin-top: 50px;
     position: relative; */
   }
-  .rewiew-progress-row {
-    padding-left: 50px;
+  .rewiew-progress-row-second{
+    display: none;
+  }
+  .rewiew-progress-row, .mobile-rewiew-progress-row {
+    padding-left: 40px;
+    padding-bottom: 10px
+  }
+  .mobile-rewiew-progress-row {
+    padding-bottom: 20px;
   }
   .user-review-row {
     padding-left: 5px;
@@ -2504,7 +2502,7 @@ body {
   
 
   .navbar-right-icon-wrapper img {
-    padding-left: 20px;
+    padding-left: 10px;
   }
   .dashboard-modal-navbar {
     padding-right: 22px;
@@ -2512,6 +2510,20 @@ body {
   .filter-icon-wrapper {
     margin: auto;
     margin-left: 5px;
+  }
+  #video-widget {
+    position: absolute;
+    left: -75px;
+    top: 60px;
+  }
+  #photo-widget {
+    position: absolute;
+    top: -165px;
+    right: -200px;
+  }
+  .modal {
+    top: 0px;
+    left: -2px;
   }
 }
 
