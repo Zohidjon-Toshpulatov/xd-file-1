@@ -2380,6 +2380,15 @@ body {
   display: none;
 }
 
+.close-modal {
+  position: absolute;
+  opacity: 0px;
+  top: -13px;
+  right: 20px;
+  font-size: 20px;
+  color: red;
+}
+
 @media screen and (max-width: 992px) and (min-width: 576px) {
   .modal-lg,
   .modal-xl {
@@ -2527,8 +2536,8 @@ body {
     right: -200px;
   }
   .modal {
-    top: 0px;
-    left: -2px;
+    top: -6px;
+    left: -5px;
   }
 }
 
