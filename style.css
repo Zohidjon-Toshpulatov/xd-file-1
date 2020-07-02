@@ -2554,6 +2554,42 @@ body {
     top: -6px;
     left: -5px;
   }
+
+  .navbar-toggler{
+    border: none;
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  .navbar-toggler img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .mobileHome-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 60px;
+    /* background: white; */
+    background-image: linear-gradient(90deg, #f5f5ff 0%, #e7f1fe 100%);
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    transform: translate(-100%);
+    transition: all ease 0.25s;
+
+    
+  }
+  .mobileHome-nav.open{
+    transform: translateX(0);
+  }
 }
 
 @media screen and (max-width: 576px){
