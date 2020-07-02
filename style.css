@@ -1415,6 +1415,8 @@ html {
 body {
   background-image: linear-gradient(90deg, #f5f5ff 0%, #e7f1fe 100%);
   background-repeat: no-repeat;
+    display: flex;  
+
 }
 
 .icon__box {
@@ -1648,11 +1650,13 @@ body {
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
 }
+.section__comment-row::-webkit-scrollbar {
+  display: none;
+}
 
 .section__comment-row:not(:last-child) {
   margin-right: 72px;
 }
-
 .section__comment-col-custom {
   border-radius: 8px;
   opacity: 1;
@@ -1660,7 +1664,9 @@ body {
   height: 250px;
   display: inline-block;
 }
-
+.wrapper-row {
+  display: flex;
+}
 .custom-item-wrapper {
   width: 100%;
   height: 95%;
@@ -2264,24 +2270,21 @@ body {
   content: "";
   position: absolute;
   width: 1px;
-  height: calc(27% - 59px);
+  height: calc(24% - 59px);
   left: -34px;
   background-color: #00000026;
   margin-top: 30px;
 }
-
 .vertical-line1::after {
-  top: 23px;
+  top: 10%;
 }
-
 .vertical-line2::after {
-  height: calc(27% - 59px);
-  top: 37%;
+  height: calc(24% - 59px);
+  top: 41%;
 }
-
 .vertical-line3::after {
-  height: calc(27% - 59px);
-  top: 71%;
+  height: calc(24% - 59px);
+  top: 73%;
 }
 .progress-item {
   counter-increment: list;
@@ -2589,6 +2592,19 @@ body {
   }
   .mobileHome-nav.open{
     transform: translateX(0);
+    margin-left: 13px;
+  }
+
+  .outer-row {
+    position: relative;
+    overflow-x: auto;
+    width: 300px;
+  }
+  .wrapper-row {
+    width: 400px;
+  }
+  .section__comment-row {
+    margin-bottom: 2.5rem;
   }
 }
 
