@@ -2354,6 +2354,10 @@ body {
   top: 11px;
 }
 
+.mobile-rewiew-progress-row {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) and (min-width: 992px) {
   .dashboard-modal .modal-content {
     height: 100%;
@@ -2464,6 +2468,7 @@ body {
     padding-bottom: 10px
   }
   .mobile-rewiew-progress-row {
+    display: block;
     padding-bottom: 20px;
   }
   .user-review-row {
