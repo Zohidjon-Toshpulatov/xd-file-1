@@ -2090,6 +2090,7 @@ body {
   padding-top: 25px;
 }
 #photo-widget {
+
   width: 94px;
   height: 40px;
   background: #ff336647 0% 0% no-repeat padding-box;
@@ -2447,6 +2448,13 @@ body {
       margin-left: 20px;
       padding-bottom: 10px;
     }
+
+    .photo-widget{
+      position: absolute;
+      top: -208px;
+      right: 50px;
+    }
+
     .navbar-right-icon-wrapper img {
       padding-left: 20px;
     }
