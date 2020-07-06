@@ -1649,6 +1649,7 @@ body {
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
 .section__comment-row::-webkit-scrollbar {
   display: none;
@@ -1811,6 +1812,10 @@ body {
   border-bottom: 2px solid #22232b;
   padding: 4px 0;
   font-size: 1.3rem;
+}
+
+.section__room .form-group input:focus{
+  outline: none;
 }
 
 .section__room .form-group select {
@@ -2592,13 +2597,13 @@ body {
   }
   .mobileHome-nav.open{
     transform: translateX(0);
-    margin-left: 13px;
   }
 
   .outer-row {
     position: relative;
     overflow-x: auto;
     width: 300px;
+    scrollbar-width: none;
   }
   .wrapper-row {
     width: 400px;
